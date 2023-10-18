@@ -10,6 +10,7 @@ import java.util.Scanner;
 import fr.diginamic.recensement.entites.Departement;
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
+import fr.diginamic.recensement.exception.SaisiException;
 import fr.diginamic.recensement.services.comparators.EnsemblePopComparateur;
 
 /**
@@ -39,6 +40,7 @@ public class RechercheDepartementsPlusPeuplees extends MenuService {
 			}
 			departement.addVille(ville);
 		}
+
 
 		List<Departement> departements = new ArrayList<Departement>();
 		departements.addAll(mapDepts.values());
